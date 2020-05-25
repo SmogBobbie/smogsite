@@ -1,0 +1,22 @@
+@import "../fonts.scss";
+
+.Work {
+  &__Button {
+    position: fixed;
+    top: 50%;
+    font-family: $univers;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  &__Next {
+    right: 0;
+    padding: 50px 20px 50px 50px;
+  }
+
+  &__Prev {
+    left: 0;
+    padding: 50px 50px 50px 20px;
+  }
+}
