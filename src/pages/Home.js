@@ -10,7 +10,14 @@ class Home extends Component {
           Smog is a film company based in New York.
         </h1>
         <div className="Home__Video--Wrap">
-          <video className="Home__Video" autoPlay muted loop id="myVideo">
+          <video
+            className="Home__Video"
+            autoPlay
+            playsInline
+            muted
+            loop
+            id="myVideo"
+          >
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
