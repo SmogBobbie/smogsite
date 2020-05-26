@@ -16,6 +16,8 @@ class Home extends Component {
             playsInline
             muted
             loop
+            defaultMuted
+            preload="auto"
             id="myVideo"
           >
             <source src={videoSrc} type="video/mp4" />
