@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import client from "../client";
 import Project from "../components/Project";
 import "./Work.scss";
@@ -58,8 +58,8 @@ class Work extends Component {
   render() {
     let { projects, currentProject } = this.state;
 
-    return (
-      <section className="Work">
+    let desktop = (
+      <Fragment>
         {currentProject > 0 ? (
           <div className="Work__Button Work__Prev" onClick={this.prevProject}>
             Previous
@@ -74,6 +74,20 @@ class Work extends Component {
             Next
           </div>
         ) : null}
+      </Fragment>
+    );
+
+    let mobile = (
+      <Fragment>
+        {projects.map((proj, i) => {
+          return <Project project={proj} key={i} />;
+        })}
+      </Fragment>
+    );
+
+    return (
+      <section className="Work">
+        {window.innerWidth > 765 ? desktop : mobile}
       </section>
     );
   }

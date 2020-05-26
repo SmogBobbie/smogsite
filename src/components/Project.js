@@ -13,6 +13,7 @@ class Project extends Component {
     console.log(fields);
     return (
       <div className="Project">
+        <h1 className="Project__Title">{fields.title}</h1>
         <div class="Project__Video">
           <iframe
             src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
