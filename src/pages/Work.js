@@ -85,11 +85,7 @@ class Work extends Component {
       </Fragment>
     );
 
-    return (
-      <section className="Work">
-        {window.innerWidth > 765 ? desktop : mobile}
-      </section>
-    );
+    return <section className="Work">{mobile}</section>;
   }
 }
 

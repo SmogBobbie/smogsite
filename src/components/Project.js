@@ -10,7 +10,6 @@ class Project extends Component {
     let { fields } = this.props.project;
     let urlParts = fields.vimeoUrl.split("/");
     let vimeoId = urlParts[urlParts.length - 1];
-    console.log(fields);
     return (
       <div className="Project">
         <h1 className="Project__Title">{fields.title}</h1>
