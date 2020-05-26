@@ -23,7 +23,7 @@ class Nav extends Component {
     let logoColor = LOGO_COLORS.GOLD;
 
     if (path.includes("/work")) {
-      logoColor = LOGO_COLORS.RED;
+      logoColor = LOGO_COLORS.PURPLE;
     } else if (path.includes("/info")) {
       logoColor = LOGO_COLORS.GREEN;
     }

@@ -18,3 +18,13 @@
     text-align: center;
   }
 }
+
+@media (max-width: 765px) {
+  .About {
+    &__Paragraph {
+      font-size: 26px;
+      line-height: 29px;
+      padding: 0 10px;
+    }
+  }
+}

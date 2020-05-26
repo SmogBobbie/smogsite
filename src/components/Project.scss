@@ -62,5 +62,14 @@
     padding: 0 20px;
     width: 100%;
     box-sizing: border-box;
+
+    &__Credits {
+      display: block;
+
+      &__Label {
+        text-align: left;
+        margin-bottom: 6px;
+      }
+    }
   }
 }

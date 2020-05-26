@@ -79,3 +79,19 @@
     }
   }
 }
+
+@media (max-width: 765px) {
+  .Nav {
+    height: 150px;
+
+    &__Logo {
+      left: 40px;
+    }
+
+    &__Links {
+      left: 40px;
+      top: 100px;
+      padding-left: 0;
+    }
+  }
+}

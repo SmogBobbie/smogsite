@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as LogoImage } from "../images/logo.svg";
 import "./Logo.scss";
 
@@ -9,7 +10,9 @@ class Logo extends Component {
 
     return (
       <span className="Logo">
-        <LogoImage style={{ fill: fill }} className={logoClass} />
+        <Link to="/">
+          <LogoImage style={{ fill: fill }} className={logoClass} />
+        </Link>
       </span>
     );
   }

@@ -38,3 +38,15 @@
     z-index: -1;
   }
 }
+
+@media (max-width: 765px) {
+  .Home {
+    height: calc(100vh - 246px);
+
+    &__Text {
+      font-size: 35px;
+      line-height: 38px;
+      max-width: 450px;
+    }
+  }
+}
