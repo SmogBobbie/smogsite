@@ -16,6 +16,7 @@
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
   }
 
   &__Video {
@@ -32,8 +33,8 @@
 
   &__Video--Wrap {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
