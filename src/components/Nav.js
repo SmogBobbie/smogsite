@@ -24,6 +24,8 @@ class Nav extends Component {
 
     if (path.includes("/work")) {
       logoColor = LOGO_COLORS.PURPLE;
+    } else if (path.includes("/feed")) {
+      logoColor = LOGO_COLORS.RED;
     } else if (path.includes("/info")) {
       logoColor = LOGO_COLORS.GREEN;
     }

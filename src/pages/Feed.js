@@ -27,11 +27,21 @@ class Feed extends Component {
   }
 
   render() {
+    console.log(this.state.items);
     return (
       <div className="Feed">
         {this.state.items.map((item) => (
           <div key={item.sys.id} className="Feed__Image">
-            <img src={`https:${item.fields.image.fields.file.url}`} />
+            {item.fields.image.fields.file.contentType === "video/mp4" ? (
+              <video controls>
+                <source
+                  src={item.fields.image.fields.file.url}
+                  type="video/mp4"
+                />
+              </video>
+            ) : (
+              <img src={`https:${item.fields.image.fields.file.url}`} />
+            )}
           </div>
         ))}
       </div>
