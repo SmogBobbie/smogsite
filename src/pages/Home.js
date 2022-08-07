@@ -6,9 +6,6 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h1 className="Home__Text">
-          Smog is a film company based in New York.
-        </h1>
         <div className="Home__Video--Wrap">
           <video
             className="Home__Video"

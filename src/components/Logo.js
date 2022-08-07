@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as LogoImage } from "../images/logo.svg";
+import logoSrc from "../images/smog-logo-cropped.png";
 import "./Logo.scss";
 
 class Logo extends Component {
@@ -9,11 +9,9 @@ class Logo extends Component {
     let fill = this.props.fill || "#fff";
 
     return (
-      <span className="Logo">
         <Link to="/">
-          <LogoImage style={{ fill: fill }} className={logoClass} />
+          <div class="Logo" style={{backgroundImage: `url(${logoSrc})`}} />
         </Link>
-      </span>
     );
   }
 }

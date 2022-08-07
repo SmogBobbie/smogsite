@@ -1,14 +1,13 @@
 @import url("//hello.myfonts.net/count/3b8fd7");
 
 @font-face {
-  font-family: "WindsorD-Bol";
-  src: url("webFonts/WindsorD-Bol/font.woff2") format("woff2"),
-    url("webFonts/WindsorD-Bol/font.woff") format("woff");
+  font-family: "alte-bold";
+  src: url("webFonts/AlteHaasGroteskBold.woff") format("woff");
 }
+
 @font-face {
-  font-family: "UniversLTPro-55Roman";
-  src: url("webFonts/UniversLTPro-55Roman/font.woff2") format("woff2"),
-    url("webFonts/UniversLTPro-55Roman/font.woff") format("woff");
+  font-family: "alte-regular";
+  src: url("webFonts/AlteHaasGroteskRegular.woff") format("woff");
 }
 
 body {

@@ -27,7 +27,6 @@ class Feed extends Component {
   }
 
   render() {
-    console.log(this.state.items);
     return (
       <div className="Feed">
         {this.state.items.map((item) => (
@@ -40,7 +39,7 @@ class Feed extends Component {
                 />
               </video>
             ) : (
-              <img src={`https:${item.fields.image.fields.file.url}`} />
+              <img loading="lazy" src={`https:${item.fields.image.fields.file.url}`} />
             )}
           </div>
         ))}
